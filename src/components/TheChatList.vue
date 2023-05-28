@@ -35,7 +35,7 @@ const filteredList = computed(() => {
             <div class="user-details__name-message">
               <h4 class="name">{{ chat.name }}</h4>
               <p class="message">
-                {{ chat.messages[chat.messages.length - 1].text }}
+                {{ chat.messages[chat.messages.length - 1] ? chat.messages[chat.messages.length - 1].text : "No messages yet..." }}
               </p>
             </div>
           </div>
